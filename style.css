@@ -1,0 +1,315 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+nav {
+    position: fixed;
+    background-color: rgb(0, 179, 255);
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+ul {
+    position: relative;
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+.logo {
+    font-size: 25px;
+    position: relative;
+    left: 5%;
+    color: azure;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.main_img {
+    width: 100%;
+    height: 300px;
+}
+
+.section1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    /* Set a fixed height for section1 */
+}
+
+.img_text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    /* background-color: midnightblue; */
+    /* border-radius: 8px; */
+    padding: 10px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+p {
+    text-align: justify;
+}
+
+.welcome_img {
+    width: 100%;
+    height: 250px;
+    transition: transform 10s ease;
+    /* Add a smooth transition for the rotation effect */
+}
+
+.welcome_img:hover {
+    transform: rotateY(1800deg);
+    /* Rotate the image 180 degrees on hover */
+}
+
+.container {
+    padding-top: 70px;
+}
+
+.teacher_img,
+.course_img {
+    width: 90%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.teacher_img:hover::before,
+.course_img:hover::before {
+    transform: scaleX(1);
+    /* When hovered, the line becomes visible */
+}
+
+.teacher_img:hover,
+.course_img:hover {
+    border: 10px solid rgb(255, 255, 255);
+    /* Border for the hover effect */
+}
+
+.label_text {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.input_design,
+.input_txt {
+    width: 60%;
+    height: 40px;
+    /* border-radius: 25px; */
+    border: 1px solid seagreen;
+}
+
+.adm_int {
+    padding-bottom: 8px;
+}
+
+#submit {
+    position: relative;
+    width: 15%;
+    left: 5%;
+}
+
+footer {
+    background-color: black;
+    height: 70px;
+    width: 100%;
+}
+
+.footer_txt {
+    text-align: center;
+    color: white;
+    top: 20%;
+    position: relative;
+}
+
+.adm {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.input_txt {
+    padding-top: 200px;
+    overflow: hidden; /* Set overflow to hidden to remove the scrollbar */
+
+}
+
+.form_deg {
+    padding-top: 200px;
+}
+
+.label_deg {
+    display: inline-block;
+    color: rgb(118, 118, 255);
+    text-align: right;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login_form {
+    background-color: rgb(75, 57, 32);
+    width: 400px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.title_deg {
+    background-color: rgb(65, 189, 194);
+    color: rgb(255, 255, 255);
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.body_deg {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        background-color: rgb(0, 179, 255);
+        width: 100%;
+        height: 70px;
+        z-index: 1;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    ul {
+        float: right;
+        text-align: right;
+        /* margin-top: 5px; */
+    }
+
+    li {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 8px;
+    }
+}
+
+
+#preloader {
+    background: #efef;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+}
+
+.load_container {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 250px;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0;
+}
+
+.loader div {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 60px;
+    left: 20px;
+}
+
+.loader div:nth-child(1) {
+    background: #cc8707;
+    animation: loading 1s linear infinite;
+    animation-delay: -0.5s;
+}
+
+.loader div:nth-child(2) {
+    background: #4bdfe4;
+    animation: loading 1s linear infinite;
+    animation-delay: 0s;
+}
+
+.loader div:nth-child(3) {
+    background: #eeeb39;
+    animation: loading-o 1s linear infinite;
+    animation-delay: -0.5s;
+}
+
+@keyframes loading {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(80px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes loading-o {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    49.99% {
+        opacity: 1;
+        transform: translate(80px, 0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(80px, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+}

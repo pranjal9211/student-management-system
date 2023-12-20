@@ -1,0 +1,15 @@
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.div_deg {
+    background-color: skyblue;
+    border: 2px solid black;
+    width: 500px;
+    padding:70px 0px 70px 0px;
+}    
