@@ -36,6 +36,7 @@ Import schoolproject.sql into database.
 To import schoolproject.sql open your browser and navigate to http://localhost/phpmyadmin/ and import schoolproject.sql file.
 
 - **Run the Project**:
-Open your web browser and navigate to http://localhost/student-management-system (or whatever URL corresponds to your web server's setup and your project folder).
+Step 1: Rename folder name from student-management-system-master to student-management-system.
+Step 2: Open your web browser and navigate to http://localhost/student-management-system (or whatever URL corresponds to your web server's setup and your project folder).
 Now, your project should be up and running. If there are any issues, check the browser console and server logs for error messages. Additionally, make sure your PHP version is compatible with the code.
 
